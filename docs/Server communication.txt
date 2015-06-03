@@ -1,0 +1,32 @@
+Communication Protocol
+
+Server to Client
+1. Server connects to a client.
+2. Server sends "Message" object to the client without any data
+3. Client sends "Message" object to the server with args[0] = client's ID
+4. Server verifies that the received ID is the same as the ID the server 
+	expected.
+    4.a. If ID was confirmed, the server sends "Message" object with 
+    	args[1] = task
+    4.b. If ID was not confirmed, the server closes connection.
+
+Client to Server
+When client application starts:
+SYNC
+1. Client connects to the server
+2. Client sends "Message" object with:
+    - reguest type: RequestType "SYNC"
+    - arguments[0]: int actual ID if one has been assigned before or Constants.
+    	NULL_ID if it's a new client.    
+    - arguments[1]: int port number that the client is listening on
+    - arguments[2]: ClientType type of the client (worker or client) if it's 
+    	a new account. Server ignores this field if account id (argument[0]) is
+    	found.
+3. Server sends "Message" object with:
+    - reguest type: RequestType "SYNC"
+    - arguments[0]: int actual ID of the client. Client HAS to use this ID for any further communication.
+NEW_TASK
+When client wants to send a new task:
+1. Client connects to the server
+2. Client sends "Message" object.
+3. Server sends back "Message" object with arguments[1] set to task's id

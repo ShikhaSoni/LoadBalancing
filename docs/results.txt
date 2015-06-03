@@ -1,0 +1,80 @@
+
+10 threads per worker 
+4XPasswordBruteforce("QWERTY");
+4XTimer(10, 20);
+RESULTS:
+______________________________________________
+Algorithm 0 performance: 44787 seconds.
+Algorithm 0 performance: 44004 seconds.
+Algorithm 1 performance: 43822 seconds.
+Algorithm 1 performance: 43808 seconds.
+Algorithm 2 performance: 33815 seconds.
+Algorithm 2 performance: 32188 seconds.
+Algorithm 3 performance: 32575 seconds.
+Algorithm 3 performance: 31552 seconds.
+Algorithm 4 performance: 43860 seconds.
+Algorithm 4 performance: 32042 seconds.
+
+4 threads per worker
+6XPasswordBruteforce("QWERTY");
+6XTimer(10, 20);
+RESULTS:
+Algorithm 0 performance: 98521 seconds.
+Algorithm 0 performance: null seconds.
+Algorithm 1 performance: 97971 seconds.
+Algorithm 1 performance: 98152 seconds.
+Algorithm 2 performance: 75959 seconds.
+Algorithm 2 performance: 59044 seconds.
+Algorithm 3 performance: 55411 seconds.
+Algorithm 3 performance: 61907 seconds.
+Algorithm 4 performance: 98124 seconds.
+Algorithm 4 performance: 59139 seconds.
+
+6XPasswordBruteforce("QWERTY");
+6XTimer(30, 20);
+RESULTS:
+______________________________________________
+Algorithm 0 performance: 74278 seconds.
+Algorithm 0 performance: null seconds.
+Algorithm 1 performance: 73682 seconds.
+Algorithm 1 performance: 72984 seconds.
+Algorithm 2 performance: 90606 seconds.
+Algorithm 2 performance: 90672 seconds.
+Algorithm 3 performance: 61143 seconds.
+Algorithm 3 performance: 90383 seconds.
+Algorithm 4 performance: 73070 seconds.
+Algorithm 4 performance: 60548 seconds.
+
+6XPasswordBruteforce("AAAAAA");
+6XTimer(3, 20);
+RESULTS:
+______________________________________________
+Algorithm 0 performance: 38484 seconds.
+Algorithm 0 performance: null seconds.
+Algorithm 1 performance: 38558 seconds.
+Algorithm 1 performance: 38672 seconds.
+Algorithm 2 performance: 29086 seconds.
+Algorithm 2 performance: 19468 seconds.
+Algorithm 3 performance: 29098 seconds.
+Algorithm 3 performance: 25771 seconds.
+Algorithm 4 performance: 38834 seconds.
+Algorithm 4 performance: 22712 seconds.
+
+==================================================
+3 workers
+4 threads per worker
+9XPasswordBruteforce("QWERTY");
+9XTimer(10, 20);
+RESULTS:
+RESULTS:
+______________________________________________
+Algorithm 0 performance: 75021 seconds.
+Algorithm 0 performance: null seconds.
+Algorithm 1 performance: 74007 seconds.
+Algorithm 1 performance: 73788 seconds.
+Algorithm 2 performance: 52314 seconds.
+Algorithm 2 performance: 73872 seconds.
+Algorithm 3 performance: 54278 seconds.
+Algorithm 3 performance: 52064 seconds.
+Algorithm 4 performance: 73754 seconds.
+Algorithm 4 performance: 51444 seconds.
